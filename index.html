@@ -3,67 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phương Quyên &amp; Quang Trường • 12.07.2026</title>
+    <title>Vĩnh Phát &amp; Hồng Đào • 31 .07.2028</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@300;400;500&amp;display=swap');
         
-        :root {
-            --rose: #c9a66b;
-        }
-        
-        body {
-            font-family: 'Inter', system_ui, sans-serif;
-        }
-        
-        .heading-serif {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-weight: 700;
-            line-height: 1.1;
-        }
-
-        .section-header {
-            font-size: 1.75rem;
-            letter-spacing: -.025em;
-        }
-
-        .wedding-card {
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
-        }
-
-        .nav-active {
-            color: #c9a66b;
-            font-weight: 500;
-        }
-
-        .story-text {
-            font-size: 15px;
-            line-height: 1.75;
-        }
-
-        .elegant-divider {
-            height: 1px;
-            background: linear-gradient(to right, transparent, #c9a66b, transparent);
-        }
-
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .heading-serif { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; line-height: 1.1; }
         .hero-bg {
             background: linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.75)), url('https://picsum.photos/id/1011/2000/1200');
-            background-size: cover;
-            background-position: center;
+            background-size: cover; background-position: center;
         }
-
-        .gold-accent {
-            color: #c9a66b;
-        }
-
-        .invitation-container {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
+        .gold-accent { color: #c9a66b; }
     </style>
 </head>
 <body class="bg-[#f8f4ef] text-zinc-800">
+
     <!-- NAV -->
     <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md z-50 border-b border-zinc-100">
         <div class="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -75,48 +31,30 @@
             </div>
             <div class="hidden md:flex items-center gap-x-8 text-sm">
                 <a href="#story" class="hover:text-[#c9a66b] transition-colors">Câu chuyện</a>
+                <a href="#photos" class="hover:text-[#c9a66b] transition-colors">Hình ảnh</a>
                 <a href="#details" class="hover:text-[#c9a66b] transition-colors">Thông tin</a>
-                <a href="#rsvp" class="hover:text-[#c9a66b] transition-colors">Xác nhận</a>
             </div>
-            <a href="#rsvp" 
-               class="px-5 py-2 text-sm font-medium bg-[#c9a66b] hover:bg-[#b38a4f] text-white rounded-full transition-all active:scale-[0.985]">
-                Xác nhận tham dự
+            <a href="#photos" class="px-5 py-2 text-sm font-medium bg-[#c9a66b] hover:bg-[#b38a4f] text-white rounded-full transition-all">
+                Xem ảnh
             </a>
         </div>
     </nav>
 
     <!-- HERO -->
-    <header class="hero-bg min-h-[100dvh] flex items-center justify-center pt-16 relative">
+    <header class="hero-bg min-h-[100dvh] flex items-center justify-center pt-16">
         <div class="max-w-screen-xl mx-auto px-6 text-center">
             <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-full bg-white/70 text-xs tracking-[2px] font-medium mb-6 border border-white/60">
-                CHỦ NHẬT • 12.07.2026
+                CHỦ NHẬT • 31 .07.2028
             </div>
-            
             <h1 class="heading-serif text-7xl md:text-8xl leading-none tracking-tighter mb-2">
                 Phương Quyên<br>&amp; Quang Trường
             </h1>
-            
             <p class="text-xl text-zinc-600 mt-4 mb-8">Nhân danh tình yêu, hãy cùng đi hết quãng đời còn lại.</p>
             
-            <div class="flex flex-col items-center gap-y-3">
-                <div class="flex items-center gap-x-4 text-sm">
-                    <div class="px-4 py-1.5 bg-white rounded-full shadow-sm border border-zinc-100 flex items-center gap-x-2">
-                        <i class="fa-regular fa-clock text-[#c9a66b]"></i>
-                        <span class="font-medium">11:00 • Khai tiệc 11:30</span>
-                    </div>
-                </div>
-                
-                <button onclick="document.getElementById('details').scrollIntoView({ behavior: 'smooth' })" 
-                        class="mt-4 group flex items-center gap-x-2 px-8 py-3.5 bg-white hover:bg-zinc-900 hover:text-white transition-all rounded-2xl text-sm font-medium shadow-sm border border-zinc-200 active:scale-[0.985]">
-                    <span>XEM CHI TIẾT LỄ CƯỚI</span>
-                    <i class="fa-solid fa-arrow-down group-hover:translate-y-0.5 transition-transform"></i>
-                </button>
-            </div>
-        </div>
-        
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-xs tracking-widest text-zinc-500">
-            <span>SCROLL</span>
-            <i class="fa-solid fa-chevron-down mt-1"></i>
+            <button onclick="document.getElementById('photos').scrollIntoView({ behavior: 'smooth' })" 
+                    class="mt-4 px-8 py-3.5 bg-white hover:bg-zinc-900 hover:text-white transition-all rounded-2xl text-sm font-medium shadow-sm border border-zinc-200">
+                XEM HÌNH ẢNH CỦA CHÚNG MÌNH
+            </button>
         </div>
     </header>
 
@@ -126,241 +64,94 @@
             <span class="uppercase tracking-[3px] text-xs font-medium text-[#c9a66b]">CÂU CHUYỆN CỦA CHÚNG MÌNH</span>
             <h2 class="heading-serif text-4xl mt-2">Chiến dịch cảm nắng</h2>
         </div>
-
-        <div class="max-w-3xl mx-auto wedding-card bg-white p-9 md:p-12 rounded-3xl border border-zinc-100">
-            <div class="story-text text-[15px] leading-relaxed text-zinc-700 space-y-6">
+        <div class="max-w-3xl mx-auto bg-white p-9 md:p-12 rounded-3xl border border-zinc-100">
+            <div class="text-[15px] leading-relaxed text-zinc-700 space-y-6">
                 <p>Quay ngược kim đồng hồ về năm 2010 tại trường Lê Ngọc Hân, khi ấy Quang Trường và Phương Quyên vẫn còn là những “mầm non tình cảm” với những rung động tuổi gà bông ngây ngô.</p>
-                
-                <p>Sau 14 năm thực hiện chiến dịch “tạm dừng hoạt động”, mỗi người đều bận rộn với “KPI” cuộc đời riêng: một người trở thành bác sĩ mổ tim ở Cần Thơ, một người trở thành cô gái Marketing ở Sài Gòn.</p>
-                
-                <p>Tưởng chừng hai đường thẳng này sẽ song song mãi mãi, thì mùa hè 2024, thuật toán định mệnh đã tự động “retarget” chính xác đối tượng. Anh bác sĩ lập tức lên một “phác đồ theo đuổi” cực kỳ chuyên nghiệp…</p>
-                
-                <p class="italic text-[#c9a66b] font-medium">“Cuối cùng, sau tất cả họ nhận ra nhịp đập trái tim mình vốn đã đồng bộ với đối phương từ năm 14 tuổi. Một chiến dịch tình yêu kéo dài hơn thập kỷ đã chính thức hoàn tất KPI lớn nhất cuộc đời: Về chung một nhà!”</p>
+                <p>Sau 14 năm, mỗi người đều bận rộn với “KPI” cuộc đời riêng: một người trở thành bác sĩ mổ tim ở Cần Thơ, một người trở thành cô gái Marketing ở Sài Gòn.</p>
+                <p class="italic text-[#c9a66b] font-medium">Cuối cùng họ nhận ra nhịp đập trái tim mình vốn đã đồng bộ từ năm 14 tuổi. Một chiến dịch tình yêu kéo dài hơn thập kỷ đã hoàn tất KPI lớn nhất cuộc đời: Về chung một nhà!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHOTOS (MỚI) -->
+    <section id="photos" class="bg-white py-16 border-y border-zinc-100">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <span class="uppercase tracking-[3px] text-xs font-medium text-[#c9a66b]">HÌNH ẢNH CỦA CHÚNG MÌNH</span>
+                <h2 class="heading-serif text-4xl mt-2">Khoảnh khắc bên nhau</h2>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+                <!-- Thay ảnh ở đây -->
+                <img src="https://https://bizweb.dktcdn.net/100/236/196/files/8-2.jpg?v=1633746149013" class="rounded-2xl w-full aspect-square object-cover" alt="">
+                <img src="https://bizweb.dktcdn.net/100/236/196/files/8-2.jpg?v=1633746149013" class="rounded-2xl w-full aspect-square object-cover" alt="">
+                <img src="https://bizweb.dktcdn.net/100/236/196/files/8-2.jpg?v=1633746149013" class="rounded-2xl w-full aspect-square object-cover" alt="">
+                <img src="https://bizweb.dktcdn.net/100/236/196/files/39073.jpg?v=1633748061876" class="rounded-2xl w-full aspect-square object-cover" alt="">
+                <img src="https://picsum.photos/id/251/600/600" class="rounded-2xl w-full aspect-square object-cover" alt="">
+                <img src="https://picsum.photos/id/160/600/600" class="rounded-2xl w-full aspect-square object-cover" alt="">
             </div>
         </div>
     </section>
 
     <!-- DETAILS -->
-    <section id="details" class="bg-white py-16 border-y border-zinc-100">
-        <div class="max-w-screen-xl mx-auto px-6">
-            <div class="grid md:grid-cols-12 gap-x-8 gap-y-10 items-start">
-                
-                <!-- Date & Time -->
-                <div class="md:col-span-5">
-                    <div class="sticky top-24">
-                        <div class="uppercase tracking-[2.5px] text-xs font-medium mb-3 text-[#c9a66b]">NGÀY TRỌNG ĐẠI</div>
-                        <div class="heading-serif text-[92px] leading-[0.85] font-bold tracking-[-6.5px]">12</div>
-                        <div class="flex items-baseline gap-x-3 -mt-3">
-                            <div>
-                                <span class="text-6xl font-semibold tracking-tighter">07</span>
-                                <span class="text-3xl font-light">.2026</span>
-                            </div>
-                            <div class="text-sm leading-tight">
-                                CHỦ NHẬT<br>
-                                <span class="text-[#c9a66b]">28.05 Bính Ngọ</span>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8 space-y-3 text-sm">
-                            <div class="flex items-center gap-x-3">
-                                <i class="fa-regular fa-clock w-5 text-[#c9a66b]"></i>
-                                <div>
-                                    <span class="font-medium">11:00</span> — Đón khách<br>
-                                    <span class="font-medium">11:30</span> — Khai tiệc
-                                </div>
-                            </div>
+    <section id="details" class="max-w-screen-xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-12 gap-x-8 gap-y-10 items-start">
+            <div class="md:col-span-5">
+                <div class="sticky top-24">
+                    <div class="uppercase tracking-[2.5px] text-xs font-medium mb-3 text-[#c9a66b]">NGÀY TRỌNG ĐẠI</div>
+                    <div class="heading-serif text-[92px] leading-[0.85] font-bold tracking-[-6.5px]">12</div>
+                    <div class="flex items-baseline gap-x-3 -mt-3">
+                        <div><span class="text-6xl font-semibold tracking-tighter">07</span><span class="text-3xl font-light">.2026</span></div>
+                        <div class="text-sm leading-tight">CHỦ NHẬT<br><span class="text-[#c9a66b]">28.05 Bính Ngọ</span></div>
+                    </div>
+                    <div class="mt-8 space-y-3 text-sm">
+                        <div class="flex items-center gap-x-3">
+                            <i class="fa-regular fa-clock w-5 text-[#c9a66b]"></i>
+                            <div><span class="font-medium">11:00</span> — Đón khách<br><span class="font-medium">11:30</span> — Khai tiệc</div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Venue -->
-                <div class="md:col-span-7">
-                    <div class="wedding-card bg-[#f8f4ef] p-8 md:p-10 rounded-3xl">
-                        <div class="uppercase text-xs tracking-[2px] mb-1 text-[#c9a66b]">ĐỊA ĐIỂM</div>
-                        <h3 class="heading-serif text-4xl leading-none mb-6">Sảnh Diamond<br>Tầng 3 — Nhà hàng Queen Marina</h3>
-                        
-                        <div class="space-y-4 text-[15px]">
-                            <div>
-                                <span class="font-medium">Cảng Du Thuyền Mỹ Tho</span><br>
-                                Số 1 Hoàng Sa, Đạo Thạnh, Đồng Tháp
-                            </div>
-                            
-                            <a href="https://maps.app.goo.gl/u5oRoDAkkpoJBkrd7" target="_blank"
-                               class="inline-flex items-center gap-x-2 text-sm font-medium text-[#c9a66b] hover:underline">
-                                <i class="fa-solid fa-map-marker-alt"></i>
-                                <span>CHỈ ĐƯỜNG GOOGLE MAPS</span>
-                            </a>
-                        </div>
-                        
-                        <div class="mt-8 pt-6 border-t border-zinc-200 text-xs text-zinc-500">
-                            Tiệc thân mật được tổ chức tại sảnh Diamond tầng 3
-                        </div>
+            <div class="md:col-span-7">
+                <div class="bg-[#f8f4ef] p-8 md:p-10 rounded-3xl">
+                    <div class="uppercase text-xs tracking-[2px] mb-1 text-[#c9a66b]">ĐỊA ĐIỂM</div>
+                    <h3 class="heading-serif text-4xl leading-none mb-6">Sảnh Diamond<br>Tầng 3 — Nhà hàng Queen Marina</h3>
+                    <div class="space-y-4 text-[15px]">
+                        <div><span class="font-medium">Cảng Du Thuyền Mỹ Tho</span><br>Số 1 Hoàng Sa, Đạo Thạnh, Đồng Tháp</div>
+                        <a href="https://maps.app.goo.gl/u5oRoDAkkpoJBkrd7" target="_blank" class="inline-flex items-center gap-x-2 text-sm font-medium text-[#c9a66b] hover:underline">
+                            <i class="fa-solid fa-map-marker-alt"></i> <span>CHỈ ĐƯỜNG GOOGLE MAPS</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAMILY & RSVP -->
-    <section class="max-w-screen-xl mx-auto px-6 py-20">
-        <div class="grid md:grid-cols-2 gap-x-10 gap-y-14">
-            
-            <!-- Family -->
+    <!-- FAMILY + THANK YOU -->
+    <section class="max-w-screen-xl mx-auto px-6 pb-16">
+        <div class="grid md:grid-cols-2 gap-x-10">
             <div>
                 <div class="uppercase tracking-[2.5px] text-xs font-medium mb-4 text-[#c9a66b]">GỬI LỜI CHÚC MỪNG</div>
                 <div class="space-y-6 text-sm">
-                    <div>
-                        <span class="font-semibold">Cô dâu:</span> Đồng Ngọc Phương Quyên<br>
-                        <span class="text-xs text-zinc-500">Con gái ông bà Đồng Minh Hiệp &amp; Hồ Mỹ Phương</span>
-                    </div>
-                    <div>
-                        <span class="font-semibold">Chú rể:</span> Trần Quang Trường<br>
-                        <span class="text-xs text-zinc-500">Con trai ông bà Trần Quang Truyền &amp; Nguyễn Kiêm Duy</span>
-                    </div>
+                    <div><span class="font-semibold">Cô dâu:</span> Đồng Ngọc Phương Quyên<br><span class="text-xs text-zinc-500">Con gái ông bà Đồng Minh Hiệp &amp; Hồ Mỹ Phương</span></div>
+                    <div><span class="font-semibold">Chú rể:</span> Trần Quang Trường<br><span class="text-xs text-zinc-500">Con trai ông bà Trần Quang Truyền &amp; Nguyễn Kiêm Duy</span></div>
                 </div>
             </div>
-
-            <!-- RSVP -->
-            <div id="rsvp">
-                <div class="uppercase tracking-[2.5px] text-xs font-medium mb-4 text-[#c9a66b]">XÁC NHẬN THAM DỰ</div>
-                <div class="wedding-card bg-white border border-zinc-100 p-8 rounded-3xl">
-                    <p class="text-sm mb-6">Hãy xác nhận sự có mặt của bạn để chúng mình chuẩn bị đón tiếp chu đáo nhất.</p>
-                    
-                    <form id="rsvpForm" class="space-y-4">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <label class="text-xs font-medium block mb-1.5">Họ tên</label>
-                                <input type="text" required class="w-full border border-zinc-200 focus:border-[#c9a66b] rounded-2xl px-4 py-3 text-sm outline-none">
-                            </div>
-                            <div>
-                                <label class="text-xs font-medium block mb-1.5">Số điện thoại</label>
-                                <input type="tel" required class="w-full border border-zinc-200 focus:border-[#c9a66b] rounded-2xl px-4 py-3 text-sm outline-none">
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <label class="text-xs font-medium block mb-1.5">Số lượng khách tham dự</label>
-                            <select class="w-full border border-zinc-200 focus:border-[#c9a66b] rounded-2xl px-4 py-3 text-sm outline-none">
-                                <option>1 người</option>
-                                <option>2 người</option>
-                                <option>3 người</option>
-                                <option>4 người trở lên</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label class="text-xs font-medium block mb-1.5">Lời nhắn (tùy chọn)</label>
-                            <textarea rows="2" class="w-full border border-zinc-200 focus:border-[#c9a66b] rounded-3xl px-4 py-3 text-sm outline-none resize-y"></textarea>
-                        </div>
-                        
-                        <button type="submit"
-                                class="w-full mt-2 py-4 rounded-2xl bg-zinc-900 hover:bg-black active:bg-zinc-950 transition-colors text-white font-medium text-sm tracking-wider">
-                            GỬI XÁC NHẬN
-                        </button>
-                    </form>
+            <div class="mt-10 md:mt-0">
+                <div class="bg-zinc-900 text-white p-8 rounded-3xl">
+                    <p class="text-[#c9a66b] text-xs tracking-[3px] mb-3">CẢM ƠN BẠN ĐÃ CHUNG VUI</p>
+                    <h3 class="text-2xl mb-4">Sự hiện diện của bạn là món quà quý giá nhất.</h3>
+                    <div class="inline-block bg-white/10 px-5 py-3 rounded-2xl text-sm mt-2">
+                        <div class="font-medium">Mừng cưới</div>
+                        <div class="font-mono text-[#c9a66b]">BIDV • 7100980763</div>
+                        <div class="text-xs opacity-70">Trần Quang Trường</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- THANK YOU + MỪNG CƯỚI -->
-    <section class="bg-zinc-900 text-white py-16">
-        <div class="max-w-screen-xl mx-auto px-6 text-center">
-            <div class="max-w-md mx-auto">
-                <p class="text-[#c9a66b] text-xs tracking-[3px] mb-3">CẢM ƠN BẠN ĐÃ CHUNG VUI</p>
-                <h3 class="heading-serif text-3xl mb-6">Sự hiện diện của bạn là món quà quý giá nhất.</h3>
-                
-                <div class="text-sm opacity-75 leading-relaxed mb-8">
-                    Mọi lời chúc phúc và sự quan tâm của bạn sẽ giúp ngày vui của chúng mình thêm trọn vẹn.
-                </div>
-                
-                <!-- Bank info -->
-                <div class="inline-block bg-white/5 border border-white/10 rounded-2xl px-6 py-5 text-left text-sm">
-                    <div class="font-medium mb-1">Mừng cưới</div>
-                    <div class="font-mono text-[#c9a66b]">BIDV • 7100980763</div>
-                    <div class="text-xs opacity-60 mt-0.5">Trần Quang Trường</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="text-center py-8 text-xs text-zinc-400">
-        Thiệp cưới online • Tạo bởi IN ẤN RIRO
-    </footer>
-
-    <script>
-        // Tailwind script
-        function initializeTailwind() {
-            document.documentElement.style.setProperty('--accent', '#c9a66b');
-        }
-        
-        // RSVP Form
-        const rsvpForm = document.getElementById('rsvpForm');
-        if (rsvpForm) {
-            rsvpForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const btn = this.querySelector('button');
-                const originalText = btn.innerHTML;
-                
-                btn.innerHTML = 'ĐANG GỬI...';
-                btn.disabled = true;
-                
-                setTimeout(() => {
-                    btn.innerHTML = 'CẢM ƠN BẠN! ❤️';
-                    btn.classList.remove('bg-zinc-900');
-                    btn.classList.add('bg-emerald-600');
-                    
-                    setTimeout(() => {
-                        // Reset form
-                        rsvpForm.reset();
-                        btn.innerHTML = originalText;
-                        btn.disabled = false;
-                        btn.classList.add('bg-zinc-900');
-                        btn.classList.remove('bg-emerald-600');
-                        
-                        // Show success toast
-                        showToast();
-                    }, 2200);
-                }, 1200);
-            });
-        }
-        
-        function showToast() {
-            const toast = document.createElement('div');
-            toast.className = `fixed bottom-6 left-1/2 -translate-x-1/2 bg-white shadow-xl border border-zinc-100 px-6 py-3.5 rounded-2xl flex items-center gap-x-3 text-sm z-[999]`;
-            toast.innerHTML = `
-                <i class="fa-solid fa-check-circle text-emerald-500 text-lg"></i>
-                <span class="font-medium">Đã ghi nhận xác nhận của bạn. Cảm ơn!</span>
-            `;
-            document.body.appendChild(toast);
-            
-            setTimeout(() => {
-                toast.style.transition = 'all .3s ease';
-                toast.style.opacity = '0';
-                setTimeout(() => toast.remove(), 300);
-            }, 3200);
-        }
-        
-        // Keyboard support
-        document.addEventListener('keydown', function(e) {
-            if (e.key === "?" && document.activeElement.tagName === "BODY") {
-                e.preventDefault();
-                document.getElementById('rsvp').scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-        
-        // Init
-        initializeTailwind();
-        
-        // Easter egg: click logo to scroll top
-        const logo = document.querySelector('nav .flex.items-center');
-        if (logo) {
-            logo.style.cursor = 'pointer';
-            logo.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-        }
-        
-        console.log('%c[RIRO] Template thiệp cưới online đã sẵn sàng. Chỉnh sửa nội dung trực tiếp trong file.', 'color:#c9a66b');
-    </script>
+    <footer class="text-center py-8 text-xs text-zinc-400">Thiệp cưới online • IN ẤN RIRO</footer>
 </body>
 </html>
